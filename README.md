@@ -43,8 +43,36 @@ Permettre à un utilisateur :
 
 ## ⚙️ Installation
 
+
 ### 1. Cloner le dépôt
+
 
 ```bash
 git clone https://github.com/votre-utilisateur/pdf-qa-gemini.git
 cd pdf-qa-gemini
+```
+### 2. Créer un environnement virtuel
+ ```bash 
+ python -m venv venv
+ source venv/bin/activate  # Sous Windows : venv\Scripts\activate
+```
+### 3. Installer les dépendances
+   ```bash
+ pip install -r requirements.txt
+  ```
+### 4. Ajouter votre clé API Gemini or openia
+```python
+ GEMINI_API_KEY = "votre_clé_api_google"
+   ```
+# 🚀 Exécution
+```python
+ streamlit run rag.py
+   ```
+# 📁 Structure du projet
+```bash
+pdf-qa-gemini/
+├── app.py                  
+├── rag.png                
+├── requirements.txt        
+└── README.md             
+
